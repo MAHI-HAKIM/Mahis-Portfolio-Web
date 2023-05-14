@@ -135,6 +135,6 @@ header {
     color: var(--text-color);
   }
   .navibar.open {
-    right: 2%;
+    right: 0.5px;
   }
 }

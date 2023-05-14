@@ -25,6 +25,10 @@ body {
 /* -----------------------------------*/
 /* ABOUT NAVIGATOR BAR*/
 /* -----------------------------------*/
+
+/* -----------------------------------*/
+/* ABOUT NAVIGATOR BAR*/
+/* -----------------------------------*/
 header {
   position: fixed;
   width: 100%;
@@ -368,10 +372,10 @@ footer {
   #menu-icon {
     display: block;
   }
-
   /* Navigator bar */
   .navibar {
     position: absolute;
+    top: 100%;
     right: 100%;
     width: 100%;
     height: 100vh;
@@ -381,13 +385,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     padding-top: 10px;
     transition: all 0.5s ease;
   }
   .navibar.open {
     line-height: 70px;
-    font-size: 50px;
+    font-size: 150px;
     right: 1px;
   }
   .navibar a :hover {
