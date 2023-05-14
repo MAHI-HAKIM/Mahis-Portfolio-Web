@@ -53,10 +53,10 @@ header {
   font-weight: 600;
 }
 
-.navbar {
+.navibar {
   display: flex;
 }
-.navbar a {
+.navibar a {
   color: var(--text-color);
   font-size: 18 px;
   font-weight: 500;
@@ -64,10 +64,10 @@ header {
   margin: 0px 30px;
   transition: all 0.5s ease;
 }
-.navbar a:hover {
+.navibar a:hover {
   color: rgb(81, 217, 81);
 }
-.navbar a.active {
+.navibar a.active {
   color: var(--main-color);
 }
 
@@ -263,21 +263,6 @@ section .title::after {
 .about .about-content .right p {
   text-align: justify;
 }
-.about .about-content .right a {
-  background: var(--main-color);
-  padding: 10px 18px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  display: inline-block;
-  margin: 30px 0;
-  border-radius: 5px;
-}
-.about .about-content .right a:hover {
-  background-color: transparent;
-  color: rgb(0, 77, 4);
-  transition: all 0.5s ease;
-}
 
 /* -----------------------------------*/
 /* FOOTER SECTION*/
@@ -351,7 +336,7 @@ footer {
     padding: 14px 2%;
     transition: 0.2s;
   }
-  .navbar a {
+  .navibar a {
     font-size: 20px;
     padding: 5px 0;
     margin: 0px 20px;
@@ -385,9 +370,8 @@ footer {
   }
 
   /* Navigator bar */
-  .navbar {
+  .navibar {
     position: absolute;
-    top: 100%;
     right: 100%;
     width: 100%;
     height: 100vh;
@@ -401,21 +385,18 @@ footer {
     padding-top: 10px;
     transition: all 0.5s ease;
   }
-  .navbar.open {
+  .navibar.open {
     line-height: 70px;
     font-size: 50px;
+    right: 1px;
   }
-  .navbar a :hover {
+  .navibar a :hover {
     color: var(--text-color);
     transform: translateY(5px);
   }
-  .navbar a.active {
+  .navibar a.active {
     color: var(--text-color);
   }
-  .navbar.open {
-    right: 2%;
-  }
-
   .images {
     position: absolute;
     left: 50%;

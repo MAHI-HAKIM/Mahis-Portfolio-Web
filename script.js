@@ -1,6 +1,6 @@
 // NAVBAR FEATURES
 let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+let navbar = document.querySelector(".navibar");
 
 menu.onclick = () => {
   menu.classList.toggle("bx-x");

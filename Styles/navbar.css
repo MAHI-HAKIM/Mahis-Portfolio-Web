@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #222327;
+  --text-color: #fff;
+  --main-color: #29fd53;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* -----------------------------------*/
+/* ABOUT NAVIGATOR BAR*/
+/* -----------------------------------*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo i {
+  color: #29fd53;
+  font-size: 28px;
+}
+.logo span {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.navibar {
+  display: flex;
+}
+.navibar a {
+  color: var(--text-color);
+  font-size: 18 px;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+.navibar a:hover {
+  color: rgb(81, 217, 81);
+}
+.navibar a.active {
+  color: var(--main-color);
+}
+
+.scrolled {
+  background: rgb(22, 92, 1);
+  opacity: 0.9;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navibar a {
+    font-size: 20px;
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+
+  /* Navigator bar */
+  .navibar {
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    transition: all 0.5s ease;
+  }
+  .navibar.open {
+    line-height: 70px;
+    font-size: 50px;
+  }
+  .navibar a :hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+  }
+  .navibar a.active {
+    color: var(--text-color);
+  }
+  .navibar.open {
+    right: 2%;
+  }
+}

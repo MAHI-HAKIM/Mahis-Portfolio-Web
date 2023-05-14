@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./intrest.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./intrest.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/footer.css" />
+
+    <title>My-Intrest</title>
+  </head>
+  <body>
+    <!-- NAVIGATOR-BAR STARTS -->
+    <header  >
+      <a href="../index.html" class="logo">
+        <i class="ri-home-heart-fill"></i><span>Logo</span></a
+      >
+      <ul class="navibar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Resume/cv.html">Resume</a></li>
+        <li><a href="#">Ethiopia</a></li>
+        <li><a href="#">Heritage</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+    <!-- NAVIGATOR-BAR ENDS -->
+
+    <!-- HEADER STARTS -->
+
+    <article class="home">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('../images/slide-1.jpg')"
+          >
+            <div class="container">
+              <h2>This is Mahi</h2>
+              <p>
+                As a web developer, I find joy in crafting digital solutions.
+                Gaming and sports are my playgrounds, where strategy meets
+                passion. Together, these worlds shape my creative and dynamic
+                journey.
+              </p>
+              <a href="#about" class="btn btn-success btn-lg" href="#">More</a>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('../images/camera.jpg')"
+          >
+            <div class="container">
+              <h2>photography</h2>
+              <p>
+                Capturing life's beauty through my lens, I'm a photographer
+                dedicated to preserving meaningful moments in a frame.
+              </p>
+              <a href="#gamePassion" class="btn btn-success btn-lg" href="#"
+                >More</a
+              >
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('../images/slide-3.jpg')"
+          >
+            <div class="container">
+              <h2>Travel</h2>
+              <p>
+                An adventurous soul, I traverse the globe seeking cultural
+                experiences, absorbing the vibrancy of life in every step
+              </p>
+              <a href="#travel" class="btn btn-success btn-lg">More</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
+    <!-- HEADER ENDS -->
+
+    <!-- MORE ABOUT ME -->
+    <article class="description">
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-img">
+              <div class="img-box">
+                <div class="shape-02"></div>
+                <img src="../images/ME.jpg" alt="about me" />
+              </div>
+            </div>
+            <div class="about-content">
+              <div class="row">
+                <div class="section-title">
+                  <h1>About Me</h1>
+                </div>
+              </div>
+              <p>
+                Hello, I'm Mahi Abdulhakim Mohammed, hailing from the historical city of Harar,
+                 Ethiopia. As a web developer, I find joy in designing and crafting digital solutions. 
+                 Each line of code I write is an expression of my creativity and a step towards making 
+                 the internet a more intuitive space. Outside of my professional life, I'm a passionate
+                  photographer, capturing life's fleeting moments and transforming them into lasting memories.
+                   Soccer is my go-to sport, providing me with both excitement and camaraderie.
+                    My love for travel takes me to far-off places, allowing me to experience diverse
+                     cultures and perspectives. Each journey enriches me, instilling a deeper appreciation
+                      for the world's beauty and its myriad of peoples. Rooted in the rich history of Harar
+                       and inspired by modern technology, I am on a continuous path of personal and professional 
+                       growth, always eager to learn and create.
+              </p>
+              <a href="#" class="btn btn-warning btn-lg"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gaming Passion STARTS -->
+      <section class="content-section" id="gamePassion">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h1>SOME OF MY FAVOURITE SHOTS</h1>
+            </div>
+          </div>
+          <div class="row">
+            
+            <!-- item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/musuem.JPG" alt="game" />
+                <div class="overlay">
+                  <h4>Ramboud Museum</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/window.JPG" alt="game" />
+                <div class="overlay">
+                  <h4>City of Harar</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+
+              <!-- Item Start -->
+              <div class="content-item">
+                <div class="content-item-inner">
+                  <img src="../images/oldman.JPG" alt="game" />
+                  <div class="overlay">
+                    <h4>Old Man in Jegol</h4>
+                  </div>
+                </div>
+              </div>
+              <!--Item End -->
+
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/cat.JPG" alt="game" />
+                <div class="overlay">
+                  <h4>Cute cat</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/cateye.JPG" alt="game" />
+                <div class="overlay">
+                  <h4>Macro Cat Eye</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+          <!-- Item Start -->
+          <div class="content-item">
+            <div class="content-item-inner">
+              <img src="../images/mountain.JPG" alt="game" />
+              <div class="overlay">
+                <h4>Mountain of Dengego</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+          </div>
+        </div>
+      </section>
+      <!-- Gaming Passion Ends -->
+
+      <!-- TRAVEL SECTION START -->
+      <section class="content-section" id="travel">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h1>LIST TO TRAVEL ON MY BUCKET LIST</h1>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/MECCA.jpg" alt="travel" />
+                <div class="overlay">
+                  <h4>MECCA</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+            <!-- item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/ISTANBUL.jpg" alt="travel" />
+                <div class="overlay">
+                  <h4>ISTANBUL</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/NEWYORK.jpg" alt="travel" />
+                <div class="overlay">
+                  <h4>NEW YORK</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/JAPAN.jpg" alt="travel" />
+                <div class="overlay">
+                  <h4>JAPAN</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/SWITZERLAND.jpg" alt="travel" />
+                <div class="overlay">
+                  <h4>SWITZERLAND</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Item End -->
+            <!-- Item Start -->
+            <div class="content-item">
+              <div class="content-item-inner">
+                <img src="../images/THAILAND.jpg" alt="travel" />
+                <div class="overlay">
+                  <h4>THAILAND</h4>
+                </div>
+              </div>
+            </div>
+            <!--Item End -->
+          </div>
+        </div>
+      </section>
+      <!-- TRAVEL SECTION ENDS -->
+    </article>
+
+    <!----------------------------PHOTO API------------------------->
+    <div class="col-12 padding heading"></div>
+    <div class="contain api">
+      <br />
+      <h1 style="margin-left: 35%">Mini Photo Search</h1>
+      <br />
+      <form id="form" autocomplete="off">
+        <div class="form-group col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="search"
+            placeholder="Search for free photos..."
+          />
+        </div>
+        <div class="form-group col-md-6 center">
+          <input type="submit" class="btn btn-danger" value="search" />
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div id="images"></div>
+        </div>
+      </div>
+    </div>
+<!-- API ENDS HERE -->
+
+
+    <!-- FOOTER SECTION STARTS -->
+    <footer>
+      <div class="footer-content">
+        <h4>Mahi Abdulhakim</h4>
+        <p>Web and UI/UX Developer | Photographer | Cinematic Video Creator</p>
+        <ul class="socials">
+          <li>
+            <a href="mailto:mahiabdul20@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/silver_shad3/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mahi-hakim/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Mahi Abdulhakim. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION ENDS -->
+
+    <script src="../script.js" defer></script>
+
+
+  </body>
+</html>
