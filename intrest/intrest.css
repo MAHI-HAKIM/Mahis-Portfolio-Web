@@ -47,10 +47,6 @@ header {
   transition: all 0.5s ease;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
 .logo i {
   color: #29fd53;
   font-size: 28px;
