@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+
+html {
+  overflow-x: initial !important;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #222327;
+  --text-color: #fff;
+  --main-color: #29fd53;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* navbar styling */
+.navbar {
+  position: fixed;
+  margin-bottom: -20px;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo i {
+  color: #29fd53;
+  font-size: 28px;
+}
+.logo span {
+  color: white;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.logo span:hover {
+  text-decoration: none;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+.navbar .menu li a:hover {
+  text-decoration: none;
+  color: rgb(81, 217, 81);
+}
+
+/* menu btn styling */
+.menu-btn {
+  color: rgb(243, 214, 159);
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
+    url(../images/heritage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.intro .welcome h1 {
+  color: antiquewhite;
+  transform: translateX(70%);
+  font-size: 700%;
+  font-weight: 700;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.intro .welcome {
+  margin: 15% auto auto 15%;
+  position: absolute;
+}
+
+.heading {
+  margin-left: 15%;
+}
+.heading ul {
+  text-align: left;
+  margin-left: 15%;
+  font-size: larger;
+}
+.heading p {
+  font-size: larger;
+}
+.heading h1 {
+  text-align: center;
+  color: #fc4242;
+}
+
+.heading h1:after {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.youtube-vid {
+  margin-left: 20%;
+  width: 800px;
+  height: auto;
+  margin-top: 4%;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+.featurette {
+  width: 90%;
+  transform: translateX(5%);
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.main h1 {
+  margin-top: 10%;
+}
+
+.details {
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
+}
+
+.muted {
+  color: #fc4242;
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .intro .welcome h1 {
+    transform: translate(40%, 100%);
+    font-size: 500%;
+    font-weight: 500;
+  }
+}
+@media (max-width: 768px) {
+  .intro .welcome h1 {
+    transform: translate(50%, 100%);
+    font-size: 400%;
+    font-weight: 450;
+  }
+  .heading h1,
+  .details h1 {
+    font-size: 200%;
+  }
+  .last {
+    margin-top: -15%;
+  }
+}
+@media (max-width: 450px) {
+  .logo i {
+    color: #29fd53;
+    font-size: 25px;
+  }
+  .logo span {
+    font-size: 2.7rem;
+    font-weight: 500;
+  }
+  .featurette {
+    width: 70%;
+    transform: translateX(2%);
+  }
+  .featurette img {
+    width: 350px;
+    height: auto;
+  }
+  .intro .welcome h1 {
+    transform: translateY(25rem);
+    font-size: 55px;
+  }
+  .last {
+    width: 350px;
+    height: auto;
+  }
+}
+
+/* responsive media query start */
+
+@media (max-width: 947px) {
+  #menu-icon {
+    display: block;
+    z-index: 999;
+  }
+  .navbar .max-width {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+}

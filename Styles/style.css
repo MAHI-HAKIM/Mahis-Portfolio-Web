@@ -104,7 +104,7 @@ header {
 .user i {
   color: var(--main-color);
   font-size: 28px;
-  margin-right: 7px;
+  margin-right: 3px;
 }
 
 .main a:hover {
@@ -478,5 +478,61 @@ footer {
   }
   .about .about-content .right {
     flex: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo i {
+    color: #29fd53;
+    font-size: 28px;
+  }
+  .logo span {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .user i {
+    color: var(--main-color);
+    font-size: 18px;
+  }
+  .user p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .logo i {
+    color: #29fd53;
+    font-size: 20px;
+  }
+  .logo span {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .user i {
+    color: var(--main-color);
+    font-size: 13px;
+  }
+  .user p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo i {
+    color: #29fd53;
+    font-size: 15px;
+  }
+  .logo span {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .user i {
+    color: var(--main-color);
+    font-size: 10px;
+  }
+  .user p {
+    font-size: 10px;
   }
 }

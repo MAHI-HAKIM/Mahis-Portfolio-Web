@@ -34,11 +34,6 @@ html {
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
-.navbar.apear {
-  padding: 15px 0;
-  background: rgb(16, 35, 10);
-  opacity: 0.7;
-}
 
 .navbar .max-width {
   display: flex;
@@ -95,7 +90,7 @@ html {
 }
 
 .intro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
     url(../images/mesobs.JPG);
   background-size: cover;
   background-position: center;
@@ -254,66 +249,6 @@ html {
   font-family: montserrat;
   font-weight: 500;
 }
-/********************************READ MORE*****************************/
-.read-more {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.6)),
-    url(../img/bg_resume.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 110vh;
-}
-
-.read-more h1 {
-  margin: 25px;
-  font-weight: 700;
-  color: #68b2a6;
-}
-.read-more .intro {
-  margin-bottom: 25px;
-}
-.read-more p {
-  text-indent: 25px;
-}
-
-.famous {
-  margin-top: 25%;
-}
-.famous h1 {
-  text-justify: inter-word;
-}
-
-.airlines,
-.ceremony,
-.athletics {
-  border: solid gray 1px;
-}
-
-.album img {
-  margin-left: -15px;
-}
-
-.featurette-divider {
-  margin: 5rem 0;
-}
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem;
-}
-
-.featurette {
-  width: 90%;
-  transform: translateX(5%);
-}
-
-.events {
-  background-color: #d8d8d8;
-}
-
-.events h2 {
-  color: #fc6565;
-  font-size: 250%;
-}
 
 /************************ RESPONSIVENESS*******************************/
 @media (max-width: 1200px) {
@@ -381,6 +316,15 @@ html {
 }
 
 @media (max-width: 450px) {
+  .logo i {
+    color: #29fd53;
+    font-size: 25px;
+  }
+  .logo span {
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 500;
+  }
   .intro {
     height: 100vh;
   }
@@ -414,6 +358,10 @@ html {
   #menu-icon {
     display: block;
     z-index: 999;
+  }
+  .navbar .max-width {
+    padding: 14px 2%;
+    transition: 0.2s;
   }
   .navbar .menu {
     position: fixed;

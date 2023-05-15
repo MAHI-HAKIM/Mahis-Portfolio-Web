@@ -2,6 +2,11 @@
   box-sizing: border-box;
   margin: 0;
 }
+:root {
+  --bg-color: #222327;
+  --text-color: #fff;
+  --main-color: #29fd53;
+}
 
 header {
   position: fixed;
@@ -108,7 +113,7 @@ section .title::after {
 }
 .contact-main {
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
     url(../images/contact.jpg);
   height: 100vh;
   color: rgb(255, 255, 255);

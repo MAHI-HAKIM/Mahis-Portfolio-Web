@@ -397,7 +397,17 @@ header {
     max-width: 50%;
   }
 }
+@media (max-width: 800px) {
+  .form-control {
+    width: 30rem;
+  }
+}
 
+@media (max-width: 470px) {
+  .form-control {
+    width: 20rem;
+  }
+}
 /* ABOUT SECTION*/
 @keyframes ani01 {
   0% {
