@@ -44,7 +44,9 @@ header {
   align-items: center;
 }
 .logo i {
-  color: #29fd53;
+  background: -webkit-linear-gradient(45deg, #29fd53, #023d0e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 28px;
 }
 .logo span {

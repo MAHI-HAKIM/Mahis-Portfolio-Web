@@ -49,8 +49,10 @@ header {
   /* transform: translateX(-80px); */
 }
 .logo i {
-  color: #29fd53;
-  font-size: 28px;
+  font-size: 38px;
+  background: -webkit-linear-gradient(45deg, #29fd53, #023d0e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .logo span {
   color: var(--text-color);

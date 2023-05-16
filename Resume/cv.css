@@ -26,6 +26,12 @@ header {
   padding: 15px 10%;
   opacity: 0.9;
 }
+.logo i {
+  font-size: 38px;
+  background: -webkit-linear-gradient(45deg, #29fd53, #023d0e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .skills {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url(../images/school.jpg);

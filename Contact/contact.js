@@ -15,11 +15,11 @@ emailInput.addEventListener("input", function (event) {
   }
 });
 
-nameInput.addEventListener("input", function (event) {
-  if (nameInput.value.trim() === "") {
-    nameInput.setCustomValidity("Name field cannot be empty.");
+passwordInput.addEventListener("input", function (event) {
+  if (passwordInput.value.trim() === "") {
+    passwordInput.setCustomValidity("Name field cannot be empty.");
   } else {
-    nameInput.setCustomValidity("");
+    passwordInput.setCustomValidity("");
   }
 });
 
