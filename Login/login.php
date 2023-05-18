@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$correct_username = 'mahi@ab.com';
-$correct_password = '123';
+$correct_username = 'b201210605@sakarya.edu.tr';
+$correct_password = 'b201210605';
 $login_error = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
