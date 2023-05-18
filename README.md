@@ -18,7 +18,10 @@ Contact Me
 I am always excited to connect with like-minded individuals, collaborate on projects, or answer any questions you may have. You can reach out to me through the following channels:
 
 Email: mahiabdul20@gmail.com
+
 Personal Website/Blog: [Your Website URL]
+
 Feel free to get in touch, and let's explore opportunities to work together or engage in meaningful discussions.
+
 
 Thank you for visiting my portfolio. I hope you enjoy exploring my work, and I look forward to connecting with you!
