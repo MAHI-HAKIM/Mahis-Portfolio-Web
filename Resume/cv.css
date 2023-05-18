@@ -32,6 +32,9 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.logo span {
+  font-size: 1.7rem;
+}
 .skills {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url(../images/school.jpg);

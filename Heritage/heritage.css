@@ -28,10 +28,11 @@ html {
 /* navbar styling */
 .navbar {
   position: fixed;
+  position: sticky;
   margin-bottom: -20px;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 15px 0;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
@@ -92,6 +93,7 @@ html {
   display: none;
 }
 
+/* INTRO STYLE */
 .intro {
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
     url(../images/heritage.jpg);
@@ -113,6 +115,8 @@ html {
   margin: 15% auto auto 15%;
   position: absolute;
 }
+
+/* MAIN SECTION */
 
 .heading {
   margin-left: 15%;
@@ -177,6 +181,16 @@ html {
   opacity: 0.8;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Change background-color as desired */
+  z-index: 1000; /* To keep the navbar on top of other elements */
+  transition: all 0.3s; /* Smooth transition */
+}
+
+/* RESPONSIVE FEATURES */
 @media (max-width: 992px) {
   .intro .welcome h1 {
     transform: translate(40%, 100%);

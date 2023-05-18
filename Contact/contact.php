@@ -23,9 +23,10 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- STYLE SHEETS -->
+    <script src="./contact.js" defer></script>
     <script src="./js/script.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="../Styles/navbar.css" />
-    <link rel="stylesheet" href="./Contact.css" />
+    <link rel="stylesheet" href="./contact.css" />
     <link rel="stylesheet" type="text/css" href="../Styles/footer.css" />
     <title>Contact-Me</title>
   </head>
@@ -47,6 +48,8 @@
       </div>
     </header>
     <!-- NAVIGATOR-BAR ENDS -->
+
+    <!-- INFORMATION SECTION STARTS HERE -->
     <div class="contact-main">
       <div class="contact-main-text">
         <h1>What Makes Ethiopia Great</h1>
@@ -60,8 +63,9 @@
         <a href="#contact" class="btn btn-primary btn-lg">HAVE QUESTION?</a>
       </div>
     </div>
+    <!-- INFORMATION SECTION ENDS HERE -->
 
-    <!-- contact section start -->
+    <!-- CONTACT FORM STARTS HERE -->
     <section class="contact" id="contact">
       <div class="max-width">
         <h2 class="title">Contact me</h2>
@@ -114,34 +118,36 @@
 
           <div class="column right">
             <div class="text">Message me</div>
-            <form
-              action="https://formsubmit.co/3c8b0efbdd8eccc2a6cbbbf3edbfd0a6"
-              method="POST"
-            >
+
+            <form action="confirm.php" method="POST" class="myform" id="form" id="contact-form" autocomplete="off">
               <div class="fields">
                 <div class="field name">
-                  <input type="text" placeholder="Name" required id="name-input" />
+                  <input type="text" placeholder="Name"  name = "name-input" id="name-input" />
                 </div>
                 <div class="field email">
-                  <input type="email" placeholder="Email" required id="email-input" />
+                  <input type="email" placeholder="Email"  name = "email-input" id="email-input" />
                 </div>
               </div>
               <div class="field textarea">
                 <textarea
                   cols="30"
                   rows="10"
-                  placeholder="Message..."
-                  required id="message-input"
+                  name = "message-input"
+                  placeholder="Message"
+                   id="message-input"
                 ></textarea>
               </div>
               <div class="button-area">
-                <button type="submit">Send message</button>
+                <button type="submit" class = "submit-button">Submit</button>
+                <button type="reset" class="reset-button">Reset</button>
               </div>
             </form>
+
           </div>
         </div>
       </div>
     </section>
+    <!-- CONTACT FORM ENDS HERE -->
 
 <!-- FOOTER SECTION STARTS -->
 <footer>
@@ -176,7 +182,7 @@
 <!-- FOOTER SECTION ENDS --> 
 
     <script src="../script.js" defer></script>
-    <script src="./contact.js" defer></script>
+    <script src="./contact1.js" defer></script>
 
   </body>
 </html>

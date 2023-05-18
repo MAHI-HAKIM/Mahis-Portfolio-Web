@@ -17,21 +17,28 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remcl);
 });
 
-document.querySelector("form").addEventListener("submit", function (event) {
-  let username = document.getElementById("username").value;
-  let password = document.getElementById("password").value;
+// // form-validation
+// var form = document.querySelector("form");
+// var username = document.getElementById("username");
+// var password = document.getElementById("password");
 
-  if (username === "" || password === "") {
-    alert("Username and password must not be empty.");
-    event.preventDefault();
-  } else if (!validateEmail(username)) {
-    alert("Username must be a valid email address.");
-    event.preventDefault();
-  }
-});
+// form.addEventListener("submit", function (e) {
+//   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function validateEmail(email) {
-  let re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
+//   username.setCustomValidity("");
+//   password.setCustomValidity("");
+
+//   if (username.value.trim() === "") {
+//     e.preventDefault();
+//     username.setCustomValidity("Username cannot be empty");
+//   } else if (password.value.trim() === "") {
+//     e.preventDefault();
+//     password.setCustomValidity("Password cannot be empty");
+//   } else if (!emailPattern.test(username.value)) {
+//     e.preventDefault();
+//     username.setCustomValidity("Please enter a valid email address");
+//   }
+
+//   username.reportValidity();
+//   password.reportValidity();
+// });

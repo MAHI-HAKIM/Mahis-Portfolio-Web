@@ -317,8 +317,8 @@ header {
 }
 
 .row #images {
-  padding: 20px;
-  margin: 5px 10px;
+  /* padding: 20px;
+  margin: 5px 10px; */
 }
 /* SOME RESPONSIVE FEATURES */
 @keyframes fadeInLeft {

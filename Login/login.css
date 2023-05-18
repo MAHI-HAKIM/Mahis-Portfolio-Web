@@ -157,8 +157,8 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
-  color: #29fd53;
+.forgot-password:hover {
+  color: rgb(6, 116, 101);
 }
 
 .btn {
@@ -197,9 +197,16 @@ a:hover {
 .logout-btn {
   background: -webkit-linear-gradient(left, #29fd53, #093f13);
   width: 80%;
-  font-size: 1rem; /* adjust as needed */
+  font-size: 1rem;
   color: black;
-  padding: 0 10px; /* adjust as needed */
+  padding: 0 10px;
+}
+
+.login-error {
+  color: red;
+  left: 0;
+  font-size: 15px;
+  top: 10px;
 }
 
 @media screen and (max-width: 1050px) {

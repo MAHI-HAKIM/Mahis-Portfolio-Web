@@ -3,6 +3,7 @@ session_start();
 
 $correct_username = 'mahi@ab.com';
 $correct_password = '123';
+$login_error = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $username = $_POST['username'];
@@ -11,9 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if ($username == $correct_username && $password == $correct_password) {
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
+    header('Location: ./welcome.php');
+    exit();
+  } else {
+    $login_error = 'Wrong username or password!';
   }
-  header('Location: login.php');
-  exit();
 }
 
 if (isset($_GET['logout'])) {
@@ -39,14 +42,14 @@ if (isset($_GET['logout'])) {
       <div class="login-content">
         <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
           <div class="welcome-section">
-    <h2 class="title">Welcome Mahi Abdulhakim</h2>
-    <form method="get" action="login.php" class="logout-form">
-        <input type="hidden" name="logout">
-        <input type="submit" class="btn logout-btn" value="Logout">
-    </form>
-</div>
+             <h2 class="title">Welcome Mahi Abdulhakim</h2>
+              <form method="get" action="login.php" class="logout-form">
+                <input type="hidden" name="logout">
+                <input type="submit" class="btn logout-btn" value="Logout">
+              </form>
+           </div>
         <?php else: ?>
-          <form method="post" action="./login.php">
+          <form method="post" action="./login.php"  autocomplete ="off" >
             <a href="../index.html" class="logo">
               <i class="ri-polaroid-2-fill"></i><span>Cinemagramic</span>
             </a>
@@ -58,7 +61,7 @@ if (isset($_GET['logout'])) {
               </div>
               <div class="div">
                 <h5>Username</h5>
-                <input type="text" class="input" id="username" name="username" />
+                <input type="email" class="input" required id="username" name="username" />
               </div>
             </div>
             <div class="input-div pass">
@@ -67,10 +70,13 @@ if (isset($_GET['logout'])) {
               </div>
               <div class="div">
                 <h5>Password</h5>
-                <input type="password" class="input" id="password" name="password" />
+                <input type="password" class="input" required id="password" name="password" />
               </div>
             </div>
-            <a href="#">Forgot Password?</a>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <div>
+                <span class="login-error"><?php echo $login_error; ?></span>
+            </div>
             <input type="submit" class="btn" value="Login" />
           </form>
         <?php endif; ?>
@@ -79,3 +85,4 @@ if (isset($_GET['logout'])) {
     <script type="text/javascript" src="./login.js"></script>
   </body>
 </html>
+

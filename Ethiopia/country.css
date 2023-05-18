@@ -27,10 +27,9 @@ html {
 /* navbar styling */
 .navbar {
   position: fixed;
-  margin-bottom: -20px;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 10px 0;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
@@ -91,6 +90,7 @@ html {
   display: none;
 }
 
+/* INTRO SECTION */
 .intro {
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
     url(../images/mesobs.JPG);
@@ -114,6 +114,8 @@ html {
   /* position: absolute; */
 }
 
+
+/* ABOUT COUNTRY */
 .flag img {
   width: 80%;
   height: 50%;
