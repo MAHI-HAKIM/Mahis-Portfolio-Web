@@ -37,6 +37,7 @@ if (isset($_GET['logout'])) {
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+  <!-- BODY SECTION STARTS -->
   <body>
     <div class="container">
       <div class="login-content">
@@ -49,7 +50,7 @@ if (isset($_GET['logout'])) {
               </form>
            </div>
         <?php else: ?>
-          <form method="post" action="./login.php"  autocomplete ="off" >
+          <form method="post" action="./login.php"  autocomplete ="off" id = "form" >
             <a href="../index.html" class="logo">
               <i class="ri-polaroid-2-fill"></i><span>Cinemagramic</span>
             </a>
@@ -61,7 +62,7 @@ if (isset($_GET['logout'])) {
               </div>
               <div class="div">
                 <h5>Username</h5>
-                <input type="email" class="input" required id="username" name="username" />
+                <input type="email" class="input"  id="username" required name="username" />
               </div>
             </div>
             <div class="input-div pass">

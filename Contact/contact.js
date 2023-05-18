@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Event listeners for input changes
+  // Event listeners for input change
   nameInput.addEventListener("input", validateInput);
   emailInput.addEventListener("input", validateInput);
   messageInput.addEventListener("input", validateInput);

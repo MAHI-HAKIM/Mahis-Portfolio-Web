@@ -23,7 +23,7 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- STYLE SHEETS -->
+    <!-- STYLE SHEETS  -->
     <script src="./contact.js" defer></script>
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./contact.css" />
@@ -32,7 +32,7 @@
   </head>
   <body>
     
-     <!-- NAVIGATOR-BAR STARTS -->
+     <!-- NAVIGATOR-BAR START -->
     <header  >
       <a href="../index.html" class="logo">
         <i class="ri-polaroid-2-fill"></i><span>Cinemagramic</span></a

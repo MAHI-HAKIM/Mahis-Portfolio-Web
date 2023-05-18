@@ -282,8 +282,6 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  /* height: 100%;
-  width: 100%; */
   width: 280px;
   height: 280px;
   padding: 15px;
@@ -316,10 +314,6 @@ header {
   width: 35%;
 }
 
-.row #images {
-  /* padding: 20px;
-  margin: 5px 10px; */
-}
 /* SOME RESPONSIVE FEATURES */
 @keyframes fadeInLeft {
   0% {

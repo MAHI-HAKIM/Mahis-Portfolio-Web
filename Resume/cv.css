@@ -147,6 +147,7 @@ section .title::after {
   width: 70%;
 }
 
+/* RESPONSIVE FEATURE */
 @media (max-width: 1290px) {
   .skills {
     height: 125vh;

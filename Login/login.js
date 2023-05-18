@@ -17,28 +17,40 @@ inputs.forEach((input) => {
   input.addEventListener("blur", remcl);
 });
 
-// // form-validation
-// var form = document.querySelector("form");
-// var username = document.getElementById("username");
-// var password = document.getElementById("password");
+// TEXT VALIDATOR
+document.addEventListener("DOMContentLoaded", function () {
+  // Get form element
+  let form = document.getElementById("form");
 
-// form.addEventListener("submit", function (e) {
-//   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let username = document.getElementById("username");
+  let password = document.getElementById("password");
 
-//   username.setCustomValidity("");
-//   password.setCustomValidity("");
+  function validateInput() {
+    username.setCustomValidity("");
+    password.setCustomValidity("");
 
-//   if (username.value.trim() === "") {
-//     e.preventDefault();
-//     username.setCustomValidity("Username cannot be empty");
-//   } else if (password.value.trim() === "") {
-//     e.preventDefault();
-//     password.setCustomValidity("Password cannot be empty");
-//   } else if (!emailPattern.test(username.value)) {
-//     e.preventDefault();
-//     username.setCustomValidity("Please enter a valid email address");
-//   }
+    if (username.value.trim() === "") {
+      username.setCustomValidity("UserName can not be empty!");
+    }
+    if (password.value.trim() === "") {
+      password.setCustomValidity("message box can not be empty!");
+    }
+  }
 
-//   username.reportValidity();
-//   password.reportValidity();
-// });
+  form.addEventListener("submit", function (event) {
+    validateInput();
+
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      if (!password.checkValidity()) {
+        password.reportValidity();
+      }
+      if (!username.checkValidity()) {
+        username.reportValidity();
+      }
+    }
+  });
+
+  username.addEventListener("input", validateInput);
+  password.addEventListener("input", validateInput);
+});

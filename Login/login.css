@@ -191,7 +191,7 @@ a {
 }
 
 .logout-form {
-  margin-top: 20px; /* adjust the value as needed */
+  margin-top: 20px;
 }
 
 .logout-btn {
@@ -208,6 +208,8 @@ a {
   font-size: 15px;
   top: 10px;
 }
+
+/* RESPONSIVE FEATURES */
 
 @media screen and (max-width: 1050px) {
   .container {

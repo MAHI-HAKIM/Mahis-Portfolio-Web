@@ -13,7 +13,7 @@ if (isset($_GET['logout'])) {
   exit();
 }
 ?>
-
+<!-- WELCOME PAGE -->
 <!DOCTYPE html>
 <html>
   <head>

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//AUTOMATIC TYPING FEATURE
+//AUTOMATIC TYPING FEATURES
 document.addEventListener("DOMContentLoaded", function () {
   var typed = new Typed("#typed-text", {
     strings: [

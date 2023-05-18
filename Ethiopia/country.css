@@ -114,7 +114,6 @@ html {
   /* position: absolute; */
 }
 
-
 /* ABOUT COUNTRY */
 .flag img {
   width: 80%;
@@ -356,7 +355,7 @@ html {
   }
 }
 
-/* responsive media query start */
+/* responsive media query starts */
 
 @media (max-width: 947px) {
   #menu-icon {

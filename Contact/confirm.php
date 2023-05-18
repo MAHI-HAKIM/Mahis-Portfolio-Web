@@ -37,7 +37,7 @@
         </div>
     </section>
 
-     <!-- FOOTER SECTION STARTS -->
+     <!-- FOOTER SECTION STARTS HERE-->
  <footer>
   <div class="footer-content">
     <h4>Mahi Abdulhakim</h4>
