@@ -26,7 +26,9 @@ I am always excited to connect with like-minded individuals, collaborate on proj
 
 Email: mahiabdul20@gmail.com
 
-Personal Website/Blog: https://b201210605.pages.dev/
+Personal Website/Blog :b201210605-mahi.lovestoblog.com
+on other Hosting Method Blog: https://b201210605.pages.dev/
+
 
 Feel free to get in touch, and let's explore opportunities to work together or engage in meaningful discussions.
 
